@@ -4,10 +4,10 @@ import { useContext, useEffect } from 'react';
 import { Context } from '../../context/Context';
 
 const Main = () => {
-  const prompt1 = "What is Remitly ?";
-  const prompt2 = "What is the history of Remitly";
-  const prompt3 = "How does Remitly transfer money";
-  const prompt4 = "Is Remitly secure?";
+  const prompt1 = "Who are Semios (Agriculture) ?";
+  const prompt2 = "What is the history of Semios (Agriculture)";
+  const prompt3 = "What technologies Semios (Agriculture) use";
+  const prompt4 = "How is Machine Learning helpful for agriculture";
 
   const { onSent, recentPrompt, showResult, resultData, setInput, input, loading } = useContext(Context);
 
@@ -40,7 +40,7 @@ const Main = () => {
   return (
     <div className='main'>
       <div className="nav">
-        <p>Remitly</p>
+        <p>Semios</p>
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
@@ -49,7 +49,7 @@ const Main = () => {
         <>
           <div className="greet">
               <p><span>Hello, User.</span></p>
-              <p>Welcome to the Remitly ChatBot</p>
+              <p>Welcome to the Semios ChatBot</p>
           </div>
           <div className="cards">
               <div className="card" onClick={() => handleCardClick(prompt1)}>

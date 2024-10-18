@@ -1,10 +1,9 @@
-/* Sidebar Styling */
 .sidebar {
     min-height: 100vh;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #d0f0e0; /* Softer green background */
     padding: 25px 15px;
 }
 
@@ -24,15 +23,11 @@
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
-    background-color: #003366; /* Dark blue background */
+    background-color: #cce7f0; /* Softer blue background */
     border-radius: 50px;
     font-size: 14px;
-    color: #ffffff; /* White text */
+    color: #2e8b57; /* Dark green text */
     cursor: pointer;
-}
-
-.sidebar .new-chat:hover {
-    background-color: #002244; /* Darker blue hover */
 }
 
 .sidebar .recent {
@@ -44,7 +39,6 @@
 .sidebar .recent-title {
     margin-top: 30px;
     margin-bottom: 20px;
-    color: #003366; /* Dark blue title */
 }
 
 .sidebar .recent-entry {
@@ -54,14 +48,12 @@
     padding: 10px;
     padding-right: 40px;
     border-radius: 50px;
-    background-color: #e0efff; /* Lighter blue background */
-    color: #003366; /* Dark blue text */
+    color: #282828;
     cursor: pointer;
 }
 
 .sidebar .recent-entry:hover {
-    background-color: #003366; /* Dark blue hover */
-    color: #ffffff; /* White text on hover */
+    background-color: #a3d9d2; /* Lighter green hover */
 }
 
 .sidebar .bottom {
@@ -71,27 +63,21 @@
 
 .sidebar .bottom-item {
     padding-right: 10px;
-    color: #003366; /* Dark blue text */
     cursor: pointer;
 }
 
-.sidebar .bottom-item:hover {
-    color: #002244; /* Darker blue hover */
-}
-
-@media (max-width: 600px) {
+@media (max-width:600px) {
     .sidebar {
         display: none;
     }
 }
 
-/* Main Content Styling */
 .main {
     flex: 1;
     min-height: 100vh;
     padding-bottom: 15vh;
     position: relative;
-    background-color: #e0efff; /* Light blue background */
+    background-color: #e6f2f0; /* Light blue-green background */
 }
 
 .main .nav {
@@ -100,7 +86,7 @@
     justify-content: space-between;
     font-size: 22px;
     padding: 20px;
-    color: #003366; /* Dark blue text */
+    color: #2e8b57; /* Green text */
 }
 
 .main .nav img {
@@ -122,7 +108,7 @@
 }
 
 .main .greet span {
-    background: -webkit-linear-gradient(16deg, #003366, #87ceeb); /* Dark and light blue gradient */
+    background: -webkit-linear-gradient(16deg, #32cd32, #1e90ff); /* Green and blue gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -137,7 +123,7 @@
 .main .card {
     height: 200px;
     padding: 15px;
-    background-color: #cce6ff; /* Lighter blue background */
+    background-color: #d9f3e6; /* Light green background */
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -147,20 +133,19 @@
     width: 35px;
     padding: 5px;
     position: absolute;
-    background-color: #0683ff; /* Dark blue background */
+    background-color: white;
     border-radius: 20px;
     bottom: 10px;
     right: 10px;
 }
 
 .main .card p {
-    color: #50a3f6; /* Dark blue text */
+    color: #2e8b57; /* Green text */
     font-size: 17px;
 }
 
 .main .card:hover {
-    background-color: #003366; /* Dark blue hover */
-    color: #ffffff; /* White text */
+    background-color: #a3d9f0; /* Lighter blue hover */
 }
 
 .main-bottom {
@@ -177,7 +162,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #ccf2e0; /* Light cyan-green background */
     padding: 10px 20px;
     border-radius: 50px;
 }
@@ -207,7 +192,7 @@
     margin: 15px auto;
     text-align: center;
     font-weight: 300;
-    color: #003366; /* Dark blue text */
+    color: #4682b4; /* Steel blue text */
 }
 
 .result {
@@ -248,7 +233,9 @@
 .loader hr {
     border-radius: 4px;
     border: none;
-    background: linear-gradient(to right, #003366, #ffffff); /* Dark blue to white gradient */
+    border-color: #f6f7f8;
+    background: linear-gradient(to right, #32cd32, #ffffff, #1e90ff); /* Green to blue gradient */
+    background-size: 800px 50px;
     height: 20px;
     animation: loader 3s infinite linear;
 }
@@ -266,10 +253,10 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
-    color: #003366; /* Dark blue text */
+    color: #4682b4; /* Steel blue text */
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
     .main-bottom input {
         flex: none;
         width: 150px;
