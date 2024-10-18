@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #003366; /* Dark blue text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #f0f8ff, #ffffff); /* Blue to white gradient */
+  border: 1px solid #003366; /* Dark blue border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header styling */
+.chatbot-header {
+  background-color: #003366; /* Dark blue */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Chat window */
+.chat-window {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  border-top: 1px solid #003366; /* Dark blue border */
+  border-bottom: 1px solid #003366; /* Dark blue border */
+}
+
+/* Message styling */
+.user-message,
+.bot-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user-message {
+  background-color: #cce6ff; /* Light blue */
+  color: #003366; /* Dark blue text */
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #f0f8ff; /* Lighter blue background */
+  color: #003366; /* Dark blue text */
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  border-top: 1px solid #003366; /* Dark blue border */
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #003366; /* Dark blue text */
+}
+
+.input-area button {
+  background-color: #003366; /* Dark blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #002244; /* Darker blue on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .chatbot-container {
+      width: 95%;
+  }
+}
